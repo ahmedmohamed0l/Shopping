@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161B3A"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="back"
+            android:src="@drawable/whiteback" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/loginlogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#5C000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Creating New Account"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#4AFFFFFF"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#161B3A"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="#8CB57D"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Name"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="172.5dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="2.5dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- First Name -"
+                    android:inputType="text"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="172.5dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Last Name -"
+                    android:inputType="text"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#8CB57D"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Date of Birth"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="113.3dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Day -"
+                    android:inputType="number"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="113.3dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Monthe -"
+                    android:inputType="number"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="113.3dp"
+                    android:layout_height="40dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Year -"
+                    android:inputType="date"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#8CB57D"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="E-Mail"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Enter Email Adress -"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Confirm Email -"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#8CB57D"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="Password"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="172.5dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="2.5dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Password -"
+                    android:inputType="textPassword"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="172.5dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:hint="- Password -"
+                    android:inputType="textPassword"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree to the purchase policy and rules"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#656565"
+        android:onClick="back"
+        android:paddingLeft="30dp"
+        android:paddingTop="12dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="12dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</LinearLayout>
