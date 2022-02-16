@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+// test 2
 public class Login extends AppCompatActivity {
 
     @Override
