@@ -4,38 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#515151"
+    android:background="@color/red_custom"
     android:orientation="vertical"
     tools:context=".Home">
 
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="25dp"
+                    android:layout_height="35dp"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginRight="2dp"
                     android:background="#FFFFFF"
                     android:onClick="m1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="-2.5dp"
                         android:text="Section"
@@ -45,10 +47,11 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="290dp"
-                        android:src="@drawable/section" />
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/forward_black" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -74,7 +77,46 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -114,7 +156,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -154,7 +196,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -194,7 +236,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -220,24 +262,306 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="152dp"
-                            android:layout_height="253dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="5dp"
                             android:layout_marginBottom="5dp"
                             android:background="#fff"
                             android:onClick="m1">
 
-                            <LinearLayout
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:orientation="horizontal"
-                                android:paddingLeft="20dp">
+                                android:layout_margin="20dp"
+                                android:orientation="horizontal">
 
                                 <TextView
+                                    android:id="@+id/text1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
                                     android:text="More"
                                     android:textColor="#000"
                                     android:textSize="38dp" />
@@ -245,11 +569,13 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="33dp"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginTop="13dp"
-                                    android:src="@drawable/section" />
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@+id/text1"
+                                    android:src="@drawable/forward_black" />
 
-                            </LinearLayout>
+                            </RelativeLayout>
 
 
                         </LinearLayout>
@@ -258,9 +584,9 @@
 
                 </HorizontalScrollView>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="25dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:background="#FFFFFF"
@@ -270,19 +596,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="-2.5dp"
                         android:text="Section"
                         android:textColor="#000"
                         android:textSize="20dp" />
 
                     <ImageView
                         android:layout_width="20dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="290dp"
-                        android:src="@drawable/section" />
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/forward_black" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -308,7 +637,46 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -348,7 +716,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -388,7 +756,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -428,7 +796,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -454,24 +822,306 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="152dp"
-                            android:layout_height="253dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="5dp"
                             android:layout_marginBottom="5dp"
                             android:background="#fff"
                             android:onClick="m1">
 
-                            <LinearLayout
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:orientation="horizontal"
-                                android:paddingLeft="20dp">
+                                android:layout_margin="20dp"
+                                android:orientation="horizontal">
 
                                 <TextView
+                                    android:id="@+id/text2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
                                     android:text="More"
                                     android:textColor="#000"
                                     android:textSize="38dp" />
@@ -479,11 +1129,13 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="33dp"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginTop="13dp"
-                                    android:src="@drawable/section" />
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@+id/text2"
+                                    android:src="@drawable/forward_black" />
 
-                            </LinearLayout>
+                            </RelativeLayout>
 
 
                         </LinearLayout>
@@ -492,9 +1144,9 @@
 
                 </HorizontalScrollView>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="25dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:background="#FFFFFF"
@@ -504,19 +1156,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="-2.5dp"
                         android:text="Section"
                         android:textColor="#000"
                         android:textSize="20dp" />
 
                     <ImageView
                         android:layout_width="20dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="290dp"
-                        android:src="@drawable/section" />
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/forward_black" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -542,7 +1197,46 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -582,7 +1276,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -622,7 +1316,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -662,7 +1356,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -688,24 +1382,306 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="152dp"
-                            android:layout_height="253dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="5dp"
                             android:layout_marginBottom="5dp"
                             android:background="#fff"
                             android:onClick="m1">
 
-                            <LinearLayout
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:orientation="horizontal"
-                                android:paddingLeft="20dp">
+                                android:layout_margin="20dp"
+                                android:orientation="horizontal">
 
                                 <TextView
+                                    android:id="@+id/text3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
                                     android:text="More"
                                     android:textColor="#000"
                                     android:textSize="38dp" />
@@ -713,11 +1689,13 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="33dp"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginTop="13dp"
-                                    android:src="@drawable/section" />
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@+id/text3"
+                                    android:src="@drawable/forward_black" />
 
-                            </LinearLayout>
+                            </RelativeLayout>
 
 
                         </LinearLayout>
@@ -726,9 +1704,9 @@
 
                 </HorizontalScrollView>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="25dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:background="#FFFFFF"
@@ -738,19 +1716,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="-2.5dp"
                         android:text="Section"
                         android:textColor="#000"
                         android:textSize="20dp" />
 
                     <ImageView
                         android:layout_width="20dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="290dp"
-                        android:src="@drawable/section" />
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/forward_black" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -776,7 +1757,46 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -816,7 +1836,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -856,7 +1876,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -896,7 +1916,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -922,24 +1942,306 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="152dp"
-                            android:layout_height="253dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="5dp"
                             android:layout_marginBottom="5dp"
                             android:background="#fff"
                             android:onClick="m1">
 
-                            <LinearLayout
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:orientation="horizontal"
-                                android:paddingLeft="20dp">
+                                android:layout_margin="20dp"
+                                android:orientation="horizontal">
 
                                 <TextView
+                                    android:id="@+id/text4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
                                     android:text="More"
                                     android:textColor="#000"
                                     android:textSize="38dp" />
@@ -947,11 +2249,13 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="33dp"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginTop="13dp"
-                                    android:src="@drawable/section" />
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@+id/text4"
+                                    android:src="@drawable/forward_black" />
 
-                            </LinearLayout>
+                            </RelativeLayout>
 
 
                         </LinearLayout>
@@ -960,9 +2264,9 @@
 
                 </HorizontalScrollView>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="25dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:background="#FFFFFF"
@@ -972,19 +2276,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="-2.5dp"
                         android:text="Section"
                         android:textColor="#000"
                         android:textSize="20dp" />
 
                     <ImageView
                         android:layout_width="20dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="290dp"
-                        android:src="@drawable/section" />
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/forward_black" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -1010,7 +2317,46 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1050,7 +2396,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1090,7 +2436,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1130,7 +2476,7 @@
                                 android:layout_height="200dp"
                                 android:layout_margin="2dp"
                                 android:background="#F4F4F4"
-                                android:src="@drawable/cart2" />
+                                android:src="@drawable/cart_2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1156,24 +2502,306 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="152dp"
-                            android:layout_height="253dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#fff"
+                            android:onClick="mainm3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="2dp"
+                                android:background="#F4F4F4"
+                                android:src="@drawable/cart_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Shopping Cart"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="2dp"
+                                android:text="50% Offer"
+                                android:textColor="#434343"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="5dp"
                             android:layout_marginBottom="5dp"
                             android:background="#fff"
                             android:onClick="m1">
 
-                            <LinearLayout
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:orientation="horizontal"
-                                android:paddingLeft="20dp">
+                                android:layout_margin="20dp"
+                                android:orientation="horizontal">
 
                                 <TextView
+                                    android:id="@+id/text5"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
                                     android:text="More"
                                     android:textColor="#000"
                                     android:textSize="38dp" />
@@ -1181,11 +2809,13 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="33dp"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginTop="13dp"
-                                    android:src="@drawable/section" />
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@+id/text5"
+                                    android:src="@drawable/forward_black" />
 
-                            </LinearLayout>
+                            </RelativeLayout>
 
 
                         </LinearLayout>
@@ -1207,10 +2837,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:backgroundTint="#E8357010"
+        android:backgroundTint="@color/red_custom"
         android:elevation="6dp"
         android:onClick="mycart"
-        android:src="@drawable/ic_cart1"
+        android:src="@drawable/ic_cart_1"
         app:fabSize="auto" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

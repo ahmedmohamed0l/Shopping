@@ -1,11 +1,10 @@
 package com.example.ahmed;
-// test commit
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-// test from ahmed
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Home extends AppCompatActivity {
 
@@ -33,6 +32,5 @@ public class Home extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-//        super.onBackPressed();
     }
 }

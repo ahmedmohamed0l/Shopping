@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@drawable/main_bg_1"
     android:orientation="vertical"
     tools:context=".Puycard">
 
@@ -12,149 +11,196 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
+
+        <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:background="#00000000"
             android:onClick="back"
-            android:src="@drawable/whiteback" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/white_back" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
-        android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
 
-        <TextView
+        <RelativeLayout
+            android:id="@+id/all1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            android:text="Visa number : "
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp">
+
+            <LinearLayout
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Visa number : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edtx_glass_bg"
+                    android:hint="**** **** **** ****"
+                    android:inputType="numberPassword"
+                    android:maxEms="16"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#80FFFFFF"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="CVV : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+                \\android:layout_marginLeft="110dp"
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edtx_glass_bg"
+                    android:hint="Code"
+                    android:inputType="text"
+                    android:maxEms="4"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#80FFFFFF"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Address : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edtx_glass_bg"
+                    android:hint="Delivery address"
+                    android:inputType="text"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:padding="8dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#80FFFFFF"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="Price : 350$"
+                android:textColor="@color/yellow_custom"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/all2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edtx_glass_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agree to the purchase policy and rules"
+                android:textColor="@color/yellow_custom"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bottom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/custom_purple_bg"
+            android:fontFamily="sans-serif-light"
+            android:onClick="Finish"
+            android:paddingLeft="50dp"
+            android:paddingTop="1dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="3dp"
+            android:text="Continue"
             android:textColor="#FFFFFF"
-            android:textSize="25sp" />
+            android:textSize="35sp" />
 
-        <EditText
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:background="#CACACA"
-            android:hint="**** **** **** ****"
-            android:inputType="numberPassword"
-            android:paddingLeft="15dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:textColor="#000000"
-            android:textSize="18dp" />
+    </RelativeLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="-5dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="98dp"
-            android:text="CVV : "
-            android:textColor="#FFFFFF"
-            android:textSize="25sp" />
-
-        <EditText
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:background="#CACACA"
-            android:hint="Code"
-            android:inputType="text"
-            android:paddingLeft="15dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:textColor="#000000"
-            android:textSize="18dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="-2dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="54dp"
-            android:text="Address : "
-            android:textColor="#FFFFFF"
-            android:textSize="25sp" />
-
-        <EditText
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:background="#CACACA"
-            android:hint="Delivery address"
-            android:inputType="text"
-            android:paddingLeft="15dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:textColor="#000000"
-            android:textSize="18dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="-40dp"
-        android:layout_marginTop="10dp"
-        android:text="Price : 350$"
-        android:textColor="#00FFAE"
-        android:textSize="25sp" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="200dp"
-        android:background="#48FF6C6C"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Agree to the purchase policy and rules"
-            android:textColor="#FFFB00"
-            android:textSize="18sp" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20sp"
-        android:background="#000"
-        android:onClick="Finish"
-        android:paddingLeft="50dp"
-        android:paddingTop="1dp"
-        android:paddingRight="50dp"
-        android:paddingBottom="3dp"
-        android:text="Continue"
-        android:textColor="#FFFFFF"
-        android:textSize="35sp" />
 
 </LinearLayout>

@@ -3,6 +3,45 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/black_back.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/blackback.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/button_bg_1.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/button_bg_2.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/button_bg_3.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_orang_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_purple_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_red_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_white.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_white_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_yelow_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/edit_tx_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/edtx_glass_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/edtx_white_bg_2.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/forward_white.xml" value="0.172" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/forwardwhite.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/glass_edtx_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/ic_cart1.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/ic_cart_1.xml" value="0.172" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/main_bg_1.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/main_button_bg_1.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/transparent_frame.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/tx_bg_1.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/white_back.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/whiteback.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_finish.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_login.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_mycart.xml" value="0.25" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_order.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_product.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_puycard.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_remove.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_section.xml" value="0.22894736842105262" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_signup.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2745" />
         <entry key="..\:/Users/medom/AndroidStudioProjects/Shopping/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21875" />
       </map>
     </option>
