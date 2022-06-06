@@ -26,7 +26,7 @@
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/login_logo" />
+        android:src="@drawable/mini_logo" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,14 +49,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="#4AFFFFFF"
+        android:background="@drawable/glass_bg"
         android:padding="5dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/main_bg_1"
             android:orientation="vertical"
             android:padding="5dp">
 
@@ -65,12 +64,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="5dp"
-                android:background="@color/yellow_custom"
+                android:background="@color/blue2_custom"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="2dp"
                 android:text="Name"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp" />
 
             <LinearLayout
@@ -112,12 +111,12 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/yellow_custom"
+                android:background="@color/blue2_custom"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="2dp"
                 android:text="Date of Birth"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp" />
 
             <LinearLayout
@@ -173,12 +172,12 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/yellow_custom"
+                android:background="@color/blue2_custom"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="2dp"
                 android:text="E-Mail"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp" />
 
             <LinearLayout
@@ -228,13 +227,14 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/yellow_custom"
+                android:background="@color/blue2_custom"
                 android:paddingLeft="7dp"
                 android:paddingRight="7dp"
                 android:paddingBottom="2dp"
                 android:text="Password"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp" />
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -244,21 +244,8 @@
 
 
                 <EditText
-                    android:layout_width="165.5dp"
+                    android:layout_width="336dp"
                     android:layout_height="35dp"
-                    android:layout_marginRight="2.5dp"
-                    android:background="@drawable/edtx_white_bg_2"
-                    android:gravity="center"
-                    android:hint="- Password -"
-                    android:inputType="textPassword"
-                    android:textAlignment="gravity"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:layout_width="165.5dp"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="2.5dp"
                     android:background="@drawable/edtx_white_bg_2"
                     android:gravity="center"
                     android:hint="- Password -"
@@ -269,6 +256,29 @@
 
             </LinearLayout>
 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edtx_white_bg_2"
+                    android:gravity="center"
+                    android:hint="- Confirm Password -"
+                    android:inputType="textPassword"
+                    android:textAlignment="gravity"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
     </LinearLayout>
@@ -276,21 +286,23 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:background="@drawable/edtx_glass_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Agree to the purchase policy and rules"
-            android:textColor="@color/orange_custom"
+            android:textColor="@color/blue2_custom"
             android:textSize="18sp" />
 
         <CheckBox
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#fff" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
@@ -300,7 +312,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:background="@drawable/custom_yelow_bg"
+        android:background="@drawable/custom_pink_bg"
         android:fontFamily="sans-serif-light"
         android:onClick="back"
         android:paddingLeft="28dp"

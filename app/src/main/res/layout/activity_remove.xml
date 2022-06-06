@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red_custom"
+    android:background="@drawable/main_bg_1"
     android:orientation="vertical"
     tools:context=".Remove">
 
@@ -70,7 +70,7 @@
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/custom_red_bg"
+            android:background="@drawable/custom_pink_bg"
             android:fontFamily="sans-serif-light"
             android:padding="5dp"
             android:text="Price : 5$"
@@ -153,14 +153,14 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="80dp"
-            android:background="@drawable/custom_orang_bg"
+            android:background="@drawable/custom_blue_bg"
             android:fontFamily="sans-serif-light"
             android:paddingLeft="10dp"
             android:paddingTop="8dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:text="Remove from cart"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="30sp" />
 
 

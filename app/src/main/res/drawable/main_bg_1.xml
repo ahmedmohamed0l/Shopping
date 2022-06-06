@@ -3,6 +3,6 @@
 
     <solid android:color="#fff" />
     <gradient
-        android:endColor="#000"
-        android:startColor="@color/red_custom" />
+        android:endColor="@color/pink2_custom"
+        android:startColor="@color/blue1_custom" />
 </shape>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red_custom"
+    android:background="@drawable/main_bg_1"
     android:orientation="vertical"
     tools:context=".Product">
 
@@ -68,9 +68,9 @@
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/custom_red_bg"
+            android:background="@drawable/custom_blue2_bg"
             android:fontFamily="sans-serif-light"
-            android:padding="5dp"
+            android:padding="8dp"
             android:text="Price : 5$"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
@@ -151,14 +151,14 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="80dp"
-            android:background="@drawable/custom_orang_bg"
+            android:background="@drawable/custom_pink_bg"
             android:fontFamily="sans-serif-light"
             android:paddingLeft="10dp"
             android:paddingTop="8dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:text="Add to cart"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="35sp" />
 
 
@@ -169,7 +169,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|right|bottom"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/yellow_custom"
+        android:backgroundTint="@color/blue1_custom"
         android:elevation="6dp"
         android:onClick="Mycart"
         android:src="@drawable/ic_cart_1"

@@ -9,7 +9,10 @@
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/button_bg_1.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/button_bg_2.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/button_bg_3.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_blue2_bg.xml" value="0.144" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_blue_bg.xml" value="0.2765" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_orang_bg.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_pink_bg.xml" value="0.2765" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_purple_bg.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_red_bg.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/custom_white.xml" value="0.2745" />
@@ -20,6 +23,7 @@
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/edtx_white_bg_2.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/forward_white.xml" value="0.172" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/forwardwhite.xml" value="0.2745" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/glass_bg.xml" value="0.144" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/glass_edtx_bg.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/ic_cart1.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/ic_cart_1.xml" value="0.172" />
@@ -30,8 +34,8 @@
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/tx_bg_1.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/white_back.xml" value="0.2745" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/drawable/whiteback.xml" value="0.2745" />
-        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_finish.xml" value="0.2975630611372381" />
-        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_finish.xml" value="0.33" />
+        <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_home.xml" value="0.2975630611372381" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_login.xml" value="0.2975630611372381" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_mycart.xml" value="0.25" />
         <entry key="..\:/Programming/Projects/Shopping/app/src/main/res/layout/activity_order.xml" value="0.2975630611372381" />

@@ -141,7 +141,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="monospace"
                 android:text="Price : 350$"
-                android:textColor="@color/yellow_custom"
+                android:textColor="@color/blue2_custom"
                 android:textSize="25sp" />
 
         </RelativeLayout>
@@ -172,7 +172,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Agree to the purchase policy and rules"
-                android:textColor="@color/yellow_custom"
+                android:textColor="@color/blue2_custom"
                 android:textSize="18sp" />
 
             <CheckBox
@@ -189,7 +189,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="50dp"
-            android:background="@drawable/custom_purple_bg"
+            android:background="@drawable/custom_pink_bg"
             android:fontFamily="sans-serif-light"
             android:onClick="Finish"
             android:paddingLeft="50dp"

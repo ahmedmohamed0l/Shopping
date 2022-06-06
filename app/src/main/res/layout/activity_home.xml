@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/red_custom"
+    android:background="@color/blue1_custom"
     android:orientation="vertical"
     tools:context=".Home">
 
@@ -2837,7 +2837,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/red_custom"
+        android:backgroundTint="@color/pink2_custom"
         android:elevation="6dp"
         android:onClick="mycart"
         android:src="@drawable/ic_cart_1"

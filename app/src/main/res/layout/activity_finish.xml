@@ -13,11 +13,11 @@
 
         <ImageView
             android:id="@+id/image1"
-            android:layout_width="350dp"
+            android:layout_width="220dp"
             android:layout_height="300dp"
             android:layout_centerHorizontal="true"
             android:paddingLeft="8dp"
-            android:src="@drawable/login_logo" />
+            android:src="@drawable/mini_logo" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="casual"
+                android:gravity="center"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="Thanks for your purchase and your trust in our products. ♡"
@@ -58,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:text="Back to continue shopping"
-                android:textColor="@color/yellow_custom"
+                android:textColor="#FFFFFF"
                 android:textSize="25sp" />
 
             <ImageButton

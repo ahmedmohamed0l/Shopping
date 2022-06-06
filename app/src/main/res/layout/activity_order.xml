@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pink_custom"
+    android:background="@drawable/main_bg_1"
     android:orientation="vertical"
     tools:context=".Order">
 
@@ -35,7 +35,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:background="@drawable/custom_orang_bg"
+            android:background="@drawable/custom_blue_bg"
             android:fontFamily="serif"
             android:paddingLeft="45dp"
             android:paddingTop="5dp"
