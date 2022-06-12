@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Shopping</string>
+    <string name="app_name" translatable="false">Shopping</string>
+    <string name="finish_tx1">Thanks for your purchase and your trust in our products. ♡</string>
+    <string name="finish_tx2">Back to continue shopping</string>
 </resources>
