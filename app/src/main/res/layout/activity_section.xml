@@ -4,1081 +4,457 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue1_custom"
+    android:background="@color/blue3_custom"
     android:orientation="vertical"
     tools:context=".Section">
 
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#00FFFFFF"
-        android:onClick="back"
-        android:scaleType="fitCenter"
-        android:src="@drawable/white_back" />
-
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp">
+        android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:onClick="back"
+            android:scaleType="fitCenter"
+            android:src="@drawable/black_back" />
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:orientation="vertical">
+            android:layout_below="@id/img1">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
+                android:layout_margin="3dp"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/glass_bg"
+                    android:onClick="product"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cart_4" />
 
                     <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="35dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
+                            android:fontFamily="serif"
+                            android:text="@string/home_tx1"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_25" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxWidth="140dp"
+                            android:text="@string/home_tx2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_size_15" />
 
-                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="@string/home_tx3"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_20"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
 
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/glass_bg"
+                    android:onClick="product"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cart_4" />
 
                     <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="35dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
+                            android:fontFamily="serif"
+                            android:text="@string/home_tx1"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_25" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxWidth="140dp"
+                            android:text="@string/home_tx2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_size_15" />
 
-                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="@string/home_tx3"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_20"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
 
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/glass_bg"
+                    android:onClick="product"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cart_4" />
 
                     <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="35dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
+                            android:fontFamily="serif"
+                            android:text="@string/home_tx1"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_25" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxWidth="140dp"
+                            android:text="@string/home_tx2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_size_15" />
 
-                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="@string/home_tx3"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_20"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
 
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/glass_bg"
+                    android:onClick="product"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cart_4" />
 
                     <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="35dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
+                            android:fontFamily="serif"
+                            android:text="@string/home_tx1"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_25" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxWidth="140dp"
+                            android:text="@string/home_tx2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_size_15" />
 
-                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="@string/home_tx3"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_20"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
 
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/glass_bg"
+                    android:onClick="product"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cart_4" />
 
                     <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="35dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
+                            android:fontFamily="serif"
+                            android:text="@string/home_tx1"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_25" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxWidth="140dp"
+                            android:text="@string/home_tx2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_size_15" />
 
-                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="@string/home_tx3"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_20"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
 
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/glass_bg"
+                    android:onClick="product"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cart_4" />
 
                     <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="35dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
+                            android:fontFamily="serif"
+                            android:text="@string/home_tx1"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_25" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxWidth="140dp"
+                            android:text="@string/home_tx2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_size_15" />
 
-                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="@string/home_tx3"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_20"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
 
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
+                    android:layout_margin="10dp"
+                    android:background="@drawable/glass_bg"
+                    android:onClick="product"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cart_4" />
 
                     <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="35dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
+                            android:fontFamily="serif"
+                            android:text="@string/home_tx1"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_25" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxWidth="140dp"
+                            android:text="@string/home_tx2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_size_15" />
 
-                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="@string/home_tx3"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tx_size_20"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
-
-                    <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
-
-                    <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
-
-                    <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="#E3E3E3"
-                android:onClick="m3"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_margin="3dp"
-                    android:background="#F6F6F6"
-                    android:src="@drawable/cart_2" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:background="#fff">
-
-                    <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="110dp"
-                        android:background="#fff"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:text="Name"
-                            android:textColor="#000"
-                            android:textSize="25sp">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="Price : 5$"
-                            android:textColor="#3C3C3C"
-                            android:textSize="18dp">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_gravity="center_horizontal"
-                                android:background="#DAD9D9"
-                                android:text="Description"
-                                android:textColor="#504F4F"
-                                android:textSize="14dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:text="50% Offer"
-                                android:textColor="#2E2E2E"
-                                android:textSize="20dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-
-                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -1087,17 +463,17 @@
             </LinearLayout>
 
 
-        </LinearLayout>
+        </ScrollView>
 
+    </RelativeLayout>
 
-    </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/pink2_custom"
+        android:backgroundTint="@color/pink1_custom"
         android:elevation="6dp"
         android:onClick="Mycart"
         android:src="@drawable/ic_cart_1"

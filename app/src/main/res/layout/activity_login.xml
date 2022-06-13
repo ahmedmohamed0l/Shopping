@@ -13,7 +13,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
         android:src="@drawable/main_logo" />
-<!--A-->
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,16 +22,15 @@
         android:background="@drawable/glass_bg"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
         android:paddingTop="20dp"
-        android:paddingRight="5dp"
+        android:paddingEnd="5dp"
         android:paddingBottom="15dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-
             android:orientation="horizontal">
 
             <TextView
@@ -39,20 +38,21 @@
                 android:layout_height="wrap_content"
                 android:text="Email : "
                 android:textColor="#FFFFFF"
-                android:textSize="26dp" />
+                android:textSize="@dimen/tx_size_25" />
 
             <EditText
                 style="@android:style/Widget.Material.EditText"
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_white_bg"
-                android:hint="- Email Adress -"
+                android:hint="@string/login_tx1"
                 android:inputType="textEmailAddress"
-                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
                 android:paddingTop="8dp"
+                android:paddingEnd="15dp"
                 android:paddingBottom="8dp"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18dp" />
+                android:textSize="@dimen/tx_size_18" />
 
         </LinearLayout>
 
@@ -69,19 +69,22 @@
                 android:layout_marginLeft="5dp"
                 android:text="Pass : "
                 android:textColor="#FFFFFF"
-                android:textSize="26dp" />
+                android:textSize="@dimen/tx_size_25" />
 
             <EditText
+                style="@android:style/Widget.Material.EditText"
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_white_bg"
-                android:hint="- Password -"
+                android:hint="@string/login_tx2"
                 android:inputType="numberPassword"
-                android:paddingLeft="15dp"
+                android:maxLength="12"
+                android:paddingStart="15dp"
                 android:paddingTop="8dp"
+                android:paddingEnd="15dp"
                 android:paddingBottom="8dp"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18dp" />
+                android:textSize="@dimen/tx_size_18" />
 
         </LinearLayout>
 
@@ -95,13 +98,13 @@
             android:background="@drawable/custom_blue_bg"
             android:fontFamily="sans-serif-light"
             android:onClick="m2"
-            android:paddingLeft="30dp"
+            android:paddingStart="30dp"
             android:paddingTop="12dp"
-            android:paddingRight="30dp"
+            android:paddingEnd="30dp"
             android:paddingBottom="12dp"
             android:text="Login"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="18dp" />
+            android:textSize="@dimen/tx_size_18" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -114,9 +117,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" create account"
+                android:text="@string/login_tx3"
                 android:textColor="#fff"
-                android:textSize="20sp" />
+                android:textSize="@dimen/tx_size_20" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -124,9 +127,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="0dp"
                 android:onClick="create"
-                android:text="Click here to Sign Up"
+                android:text="@string/login_tx4"
                 android:textColor="#001478"
-                android:textSize="15sp" />
+                android:textSize="@dimen/tx_size_15" />
 
         </LinearLayout>
 

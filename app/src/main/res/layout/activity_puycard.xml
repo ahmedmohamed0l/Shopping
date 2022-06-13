@@ -46,8 +46,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="casual"
                     android:text="Visa number : "
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp" />
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/tx_size_25" />
 
                 <EditText
                     android:layout_width="wrap_content"
@@ -55,13 +55,11 @@
                     android:background="@drawable/edtx_glass_bg"
                     android:hint="**** **** **** ****"
                     android:inputType="numberPassword"
-                    android:maxEms="16"
-                    android:maxLines="1"
+                    android:maxLength="16"
                     android:padding="8dp"
-                    android:paddingLeft="15dp"
-                    android:textColor="#000000"
+                    android:textColor="@color/text_black"
                     android:textColorHint="#80FFFFFF"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/tx_size_18" />
 
             </LinearLayout>
 
@@ -79,23 +77,21 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="casual"
                     android:text="CVV : "
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp" />
-                \\android:layout_marginLeft="110dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/tx_size_25" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edtx_glass_bg"
                     android:hint="Code"
-                    android:inputType="text"
-                    android:maxEms="4"
-                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="4"
                     android:padding="8dp"
-                    android:paddingLeft="15dp"
-                    android:textColor="#000000"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/text_black"
                     android:textColorHint="#80FFFFFF"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/tx_size_18" />
 
             </LinearLayout>
 
@@ -113,8 +109,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="casual"
                     android:text="Address : "
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp" />
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/tx_size_25" />
 
 
                 <EditText
@@ -123,13 +119,12 @@
                     android:background="@drawable/edtx_glass_bg"
                     android:hint="Delivery address"
                     android:inputType="text"
-                    android:lines="2"
-                    android:maxLines="2"
+                    android:maxWidth="148dp"
                     android:padding="8dp"
-                    android:paddingLeft="15dp"
-                    android:textColor="#000000"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/text_black"
                     android:textColorHint="#80FFFFFF"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/tx_size_18" />
 
             </LinearLayout>
 
@@ -140,22 +135,12 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:fontFamily="monospace"
-                android:text="Price : 350$"
+                android:text="@string/order_tx3"
                 android:textColor="@color/blue2_custom"
-                android:textSize="25sp" />
+                android:textSize="@dimen/tx_size_25" />
 
         </RelativeLayout>
 
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/all1"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true">
-
-
-        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/all2"
@@ -165,15 +150,15 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/edtx_glass_bg"
             android:orientation="horizontal"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Agree to the purchase policy and rules"
+                android:text="@string/puycard_tx1"
                 android:textColor="@color/blue2_custom"
-                android:textSize="18sp" />
+                android:textSize="@dimen/tx_size_18" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -192,13 +177,13 @@
             android:background="@drawable/custom_pink_bg"
             android:fontFamily="sans-serif-light"
             android:onClick="Finish"
-            android:paddingLeft="50dp"
+            android:paddingStart="50dp"
             android:paddingTop="1dp"
-            android:paddingRight="50dp"
+            android:paddingEnd="50dp"
             android:paddingBottom="3dp"
-            android:text="Continue"
-            android:textColor="#FFFFFF"
-            android:textSize="35sp" />
+            android:text="@string/puycard_tx2"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/tx_size_35" />
 
     </RelativeLayout>
 

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ahmed">
 
@@ -8,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".old_section"
+            android:exported="false" />
+        <activity
+            android:name=".old_home"
+            android:exported="false" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,4 +31,5 @@
         <activity android:name=".Home" />
         <activity android:name=".Signup" />
     </application>
+
 </manifest>

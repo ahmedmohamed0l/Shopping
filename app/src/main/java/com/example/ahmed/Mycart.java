@@ -15,7 +15,7 @@ public class Mycart extends AppCompatActivity {
     }
 
 
-    public void M4(View view) {
+    public void remove(View view) {
         Intent intent = new Intent(Mycart.this, Remove.class);
         startActivity(intent);
     }

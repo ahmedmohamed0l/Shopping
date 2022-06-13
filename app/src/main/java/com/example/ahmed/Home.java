@@ -14,12 +14,12 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-    public void mainm3(View view) {
+    public void product(View view) {
         Intent intent = new Intent(Home.this, Product.class);
         startActivity(intent);
     }
 
-    public void m1(View view) {
+    public void section(View view) {
         Intent intent = new Intent(Home.this, Section.class);
         startActivity(intent);
     }

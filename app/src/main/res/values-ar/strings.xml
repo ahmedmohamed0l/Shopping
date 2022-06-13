@@ -2,4 +2,35 @@
 <resources>
     <string name="finish_tx1">نشكرك على شرائك وثقتك في منتجاتنا. ♡</string>
     <string name="finish_tx2">الرجوع لمواصلة التسوق</string>
+    <string name="home_tx1">اسم العنصر</string>
+    <string name="home_tx2">نبذة سريعة عن العنصر......................................</string>
+    <string name="home_tx3">السعر : *$</string>
+    <string name="home_tx4">يوصى به</string>
+    <string name="home_tx5">اسم القسم</string>
+    <string name="login_tx1">- البريد الالكتروني -</string>
+    <string name="login_tx2">- كلمة المرور -</string>
+    <string name="login_tx3">إنشاء حساب جديد</string>
+    <string name="login_tx4">اضغط هنا للتسجيل</string>
+    <string name="mycart_tx1">طـلـب</string>
+    <string name="order_tx1">الكمية: #</string>
+    <string name="order_tx2">طـلـبـاتـك</string>
+    <string name="order_tx3">اجمالي السعر : ***$</string>
+    <string name="order_tx4">تـاكـيـد الـطـلـب</string>
+    <string name="product_tx1">إضافة الى العربة</string>
+    <string name="puycard_tx1">الموافقة على سياسة الشراء والقواعد</string>
+    <string name="puycard_tx2">اسـتـمـرار</string>
+    <string name="remove_tx1">إزالة من العربة</string>
+    <string name="signup_tx1">إنشاء حساب جديد</string>
+    <string name="signup_tx2">الاسـم</string>
+    <string name="signup_tx3">- الاسم الاول -</string>
+    <string name="signup_tx4">- الاسم الاخير -</string>
+    <string name="signup_tx5">ما هو تاريخ ميلادك؟</string>
+    <string name="signup_tx6">- اليوم -</string>
+    <string name="signup_tx7">- الشهر -</string>
+    <string name="signup_tx8">البريد الالكتروني</string>
+    <string name="signup_tx9">- ادخل البريد الالكتروني -</string>
+    <string name="signup_tx10">كلمة المرور</string>
+    <string name="signup_tx11">- تأكيد كلمة المرور -</string>
+    <string name="signup_tx12">تسجيل</string>
+
 </resources>

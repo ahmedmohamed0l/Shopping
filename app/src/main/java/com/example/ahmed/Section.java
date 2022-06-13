@@ -15,7 +15,7 @@ public class Section extends AppCompatActivity {
     }
 
 
-    public void m3(View view) {
+    public void product(View view) {
         Intent intent = new Intent(Section.this, Product.class);
         startActivity(intent);
     }

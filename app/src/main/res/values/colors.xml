@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#C8C8C8</color>
+    <color name="text_black">#000000</color>
+    <color name="glass_custom">#14CACACA</color>
     <color name="colorPrimaryDark">#434343</color>
+    <color name="colorPrimary">#C8C8C8</color>
     <color name="colorAccent">#FFFFFF</color>
-    <color name="pink2_custom">#CC92A2</color>
+    <color name="pink1_custom">#CC92A2</color>
+    <color name="pink2_custom">#80FFE6FC</color>
+    <color name="purple1_custom">#9D8BC8</color>
+    <color name="purple2_custom">#DBBAD7</color>
     <color name="blue1_custom">#48858F</color>
     <color name="blue2_custom">#A3C2E1</color>
-    <color name="purple2_custom">#DBBAD7</color>
-    <color name="purple_custom">#9D8BC8</color>
-    <color name="glass_custom">#14CACACA</color>
+    <color name="blue3_custom">#A2CBD3</color>
 </resources>
 

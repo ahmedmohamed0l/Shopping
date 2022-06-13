@@ -2,4 +2,36 @@
     <string name="app_name" translatable="false">Shopping</string>
     <string name="finish_tx1">Thanks for your purchase and your trust in our products. ♡</string>
     <string name="finish_tx2">Back to continue shopping</string>
+    <string name="home_tx1">Item name</string>
+    <string name="home_tx2">Item description......................................</string>
+    <string name="home_tx3">Price : *$</string>
+    <string name="home_tx4">Recommended</string>
+    <string name="home_tx5">Section name</string>
+    <string name="login_tx1">- Email address -</string>
+    <string name="login_tx2">- Password -</string>
+    <string name="login_tx3">create account</string>
+    <string name="login_tx4">Click here to Sign Up</string>
+    <string name="mycart_tx1">Order</string>
+    <string name="order_tx1">Quantity : #</string>
+    <string name="order_tx2">your orders</string>
+    <string name="order_tx3">Total price : ***$</string>
+    <string name="order_tx4">Confirm</string>
+    <string name="product_tx1">Add to cart</string>
+    <string name="puycard_tx1">Agree to the purchase policy and rules</string>
+    <string name="puycard_tx2">Continue</string>
+    <string name="remove_tx1">Remove from cart</string>
+    <string name="signup_tx1">Create a new account</string>
+    <string name="signup_tx2">Name</string>
+    <string name="signup_tx3">- First name -</string>
+    <string name="signup_tx4">- Last name -</string>
+    <string name="signup_tx5">What is your birthday?</string>
+    <string name="signup_tx6">- Day -</string>
+    <string name="signup_tx7">- Month -</string>
+    <string name="signup_tx8">E-Mail</string>
+    <string name="signup_tx9">- Enter email address -</string>
+    <string name="signup_tx10">Password</string>
+    <string name="signup_tx11">- Confirm password -</string>
+    <string name="signup_tx12">Register</string>
+
+
 </resources>

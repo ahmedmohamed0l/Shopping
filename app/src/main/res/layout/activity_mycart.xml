@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue1_custom"
+    android:background="@color/blue3_custom"
     android:orientation="vertical"
     tools:context=".Mycart">
 
@@ -29,17 +29,15 @@
             android:layout_alignParentTop="true">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#7C7C7C"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -47,9 +45,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -57,40 +59,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -106,7 +109,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -117,8 +120,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -126,9 +129,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -136,40 +143,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -185,7 +193,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -196,8 +204,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -205,9 +213,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -215,40 +227,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -264,7 +277,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -275,8 +288,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -284,9 +297,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -294,40 +311,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -343,7 +361,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -354,8 +372,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -363,9 +381,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -373,40 +395,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -422,7 +445,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -433,8 +456,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -442,9 +465,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -452,40 +479,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -501,7 +529,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -512,8 +540,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -521,9 +549,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -531,40 +563,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -580,7 +613,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -591,8 +624,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -600,9 +633,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -610,40 +647,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -659,7 +697,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -670,8 +708,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -679,9 +717,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -689,40 +731,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -738,7 +781,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -749,8 +792,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -758,9 +801,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -768,40 +815,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -817,7 +865,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -828,8 +876,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -837,9 +885,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -847,40 +899,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -896,7 +949,7 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
@@ -907,8 +960,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/glass_bg"
                     android:orientation="horizontal">
 
 
@@ -916,9 +969,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
+                        android:background="@drawable/glass_bg"
+                        android:onClick="remove"
+                        android:paddingStart="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:src="@drawable/cart_4" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -926,40 +983,41 @@
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
-                        android:background="#fff"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:onClick="M4">
+                            android:onClick="remove">
 
                             <LinearLayout
-                                android:layout_width="120dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="110dp"
-                                android:background="#fff"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="20dp"
                                     android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
+                                    android:fontFamily="serif"
+                                    android:text="@string/home_tx1"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_25"
+                                    android:textStyle="bold">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginStart="30dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="@string/home_tx3"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="@dimen/tx_size_18">
 
                                 </TextView>
 
@@ -975,174 +1033,16 @@
                             android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/remove" />
 
                     </RelativeLayout>
 
 
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
-                    android:orientation="horizontal">
-
-
-                    <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="3dp"
-                        android:layout_marginBottom="3dp"
-                        android:background="#fff"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="220dp"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:onClick="M4">
-
-                            <LinearLayout
-                                android:layout_width="120dp"
-                                android:layout_height="110dp"
-                                android:background="#fff"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
-                                    android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
-
-                                </TextView>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
-                                    android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
-
-                                </TextView>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                        <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
-                            android:src="@drawable/remove" />
-
-                    </RelativeLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="#E3E3E3"
-                    android:orientation="horizontal">
-
-
-                    <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:layout_margin="3dp"
-                        android:background="#F6F6F6"
-                        android:onClick="M4"
-                        android:src="@drawable/cart_2" />
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="3dp"
-                        android:layout_marginBottom="3dp"
-                        android:background="#fff"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="220dp"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:onClick="M4">
-
-                            <LinearLayout
-                                android:layout_width="120dp"
-                                android:layout_height="110dp"
-                                android:background="#fff"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
-                                    android:layout_marginTop="15dp"
-                                    android:text="Name"
-                                    android:textColor="#000"
-                                    android:textSize="25sp">
-
-                                </TextView>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
-                                    android:layout_marginTop="10dp"
-                                    android:text="Price : 5$"
-                                    android:textColor="#3C3C3C"
-                                    android:textSize="18dp">
-
-                                </TextView>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                        <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="30dp"
-                            android:src="@drawable/remove" />
-
-                    </RelativeLayout>
-
-
-                </LinearLayout>
-
 
             </LinearLayout>
+
 
         </ScrollView>
 
@@ -1158,12 +1058,12 @@
             android:background="@drawable/custom_white_bg"
             android:fontFamily="sans-serif-light"
             android:onClick="Order"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
             android:paddingBottom="2dp"
-            android:text="Order"
-            android:textColor="#000000"
-            android:textSize="40dp" />
+            android:text="@string/mycart_tx1"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/tx_size_40" />
 
     </RelativeLayout>
 
